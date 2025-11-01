@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Functions in the real world</title>
+
+  <!-- w3.css -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+  <style>
+    :root{
+      --accent1: #ff6b6b;
+      --accent2: #ffd166;
+      --accent3: #6bc1ff;
+      --accent4: #b28aff;
+      --card-bg: linear-gradient(135deg, rgba(255,107,107,0.12), rgba(178,138,255,0.08));
+    }
+
+    body{
+      background: linear-gradient(180deg, #fff 0%, #f7fbff 100%);
+      font-family: "Segoe UI", Roboto, Arial, sans-serif;
+    }
+
+    /* Big colorful header */
+    .hero {
+      background: linear-gradient(90deg, var(--accent1), var(--accent2), var(--accent3), var(--accent4));
+      color: white;
+      padding: 48px 24px;
+      border-radius: 12px;
+      box-shadow: 0 8px 30px rgba(40,40,60,0.12);
+      margin: 18px 0;
+    }
+    .hero h1{
+      font-size: clamp(28px, 4.6vw, 56px);
+      letter-spacing: -0.5px;
+      margin: 0 0 6px 0;
+    }
+    .hero p.lead{
+      margin: 0;
+      font-size: clamp(14px, 1.6vw, 18px);
+      opacity: 0.95;
+    }
+
+    /* colorful section headings */
+    .section-title{
+      display:flex;
+      align-items:baseline;
+      gap:12px;
+      margin: 16px 0 8px 0;
+    }
+    .section-title h2{
+      margin:0;
+      font-size: clamp(18px, 2.4vw, 28px);
+    }
+    .rainbow-pill{
+      font-weight:700;
+      padding:6px 10px;
+      border-radius:999px;
+      background: linear-gradient(90deg, #ff9a9e, #fad0c4, #fbc2eb, #a6c1ee);
+      box-shadow: 0 4px 12px rgba(30,30,60,0.08);
+      font-size: 12px;
+    }
+
+    /* Card layout */
+    .card {
+      background: var(--card-bg);
+      border-radius: 12px;
+      padding: 14px;
+      margin-bottom: 18px;
+      box-shadow: 0 6px 18px rgba(12,12,40,0.06);
+      border-left: 6px solid rgba(255,107,107,0.12);
+    }
+
+    /* responsive iframe wrapper */
+    .responsive-iframe{
+      position: relative;
+      width: 100%;
+      /* default 4:3 ratio, will adapt; you can change padding-bottom to 75% for 4:3, 56.25% for 16:9 */
+      padding-bottom: 75%;
+      height: 0;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    }
+    .responsive-iframe iframe{
+      position: absolute;
+      top:0;
+      left:0;
+      width:100% !important;
+      height:100% !important;
+      border:0;
+      background: white;
+      border-radius: 10px;
+    }
+
+    .small-h{
+      font-size: 15px;
+      font-weight:700;
+      margin:8px 0 6px 0;
+      color:#2b2b2b;
+    }
+
+    /* layout helpers */
+    .w3-row-padding > .w3-col { padding: 8px; }
+    @media (min-width:900px){
+      .two-cols { display:grid; grid-template-columns: 1fr 1fr; gap: 18px; align-items:start; }
+    }
+    @media (max-width:899px){
+      .two-cols { display:block; }
+    }
+
+    footer{ text-align:center; color:#666; font-size:13px; padding:10px 0; margin-top:18px; }
+  </style>
+</head>
+<body class="w3-container">
+
+  <!-- Hero -->
+  <header class="hero w3-center">
+    <h1>Functions in the real world</h1>
+    <p class="lead">A colorful interactive exploration of different function types and their transformations.</p>
+  </header>
+
+  <!-- RECIPROCAL (user asked "reciprocal function:1/x^2") -->
+  <section class="w3-section">
+    <div class="section-title">
+      <h2>Reciprocal function:1/x^2</h2>
+      <span class="rainbow-pill">Reciprocal</span>
+    </div>
+
+    <div class="card two-cols">
+      <!-- iframe left -->
+      <div>
+        <div class="responsive-iframe">
+          <!-- provided iframe (made responsive via CSS) -->
+          <iframe src="https://www.desmos.com/calculator/g9o8sftwyk?embed" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <!-- text right -->
+      <div>
+        <div class="small-h">Reciprocal function - ( 1.4 / x + 0.69 ) - 4.85 { -0.54 &lt; x &lt; 5.05 } asymptote x = 4</div>
+        <p>
+          <strong>Transformation -</strong> The function 1/x has been transformed into ( 1.4 / x + 0.69 ) - 4.85. The graph’s first transformation is a vertical stretch by a factor of 1.4 in the numerator, stretching the graph vertically and making it steeper than the parent function 1/x. The second transformation is a shift to the left by 0.69 units, caused by the ( x+0.69 ) in the denominator. The last transformation is a vertical shift downwards by 4.85.
+        </p>
+
+        <div class="small-h">Domain and range</div>
+        <p>
+          <strong>Domain:</strong> { -0.54 &lt; x &lt; 5.05 } <br/>
+          <strong>Range:</strong> { −4.61 &lt; x &lt; 4 }
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- RECIPROCAL SQUARE -->
+  <section class="w3-section">
+    <div class="section-title">
+      <h2>Reciprocal square function</h2>
+      <span class="rainbow-pill">1/x²</span>
+    </div>
+
+    <div class="card two-cols">
+      <div>
+        <div class="responsive-iframe">
+          <iframe src="https://www.desmos.com/calculator/g9o8sftwyk?embed" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <div>
+        <div class="small-h">Transformations Paragraph - reciprocal Square Function - ( 34.7/x^2+2 )-5  {-1.916 &gt; x &gt; -7.4}</div>
+        <p>
+          <strong>Transformation -</strong> The function 1/x^2 has been transformed into 1.0( 34.7/x^2+2 ) - 5. The graph’s first transformation is a vertical stretch by the factor of 34.7 in the numerator, stretching the graph vertically. By adding 2 to the denominator it makes the function values smaller for all the x, causing a vertical compression of the graph without shifting it horizontally. The last transformation is a vertical shift downwards by 5.
+        </p>
+
+        <div class="small-h">Domain and Range Paragraph</div>
+        <p>
+          <strong>Domain:</strong> {-1.916 ≥ x ≥ -7.4} and {-5 &lt; x &lt; 12.35 } (two domain parts listed) <br/>
+          <strong>Range:</strong> {-4.16 &lt; x &lt; 1.93 {1.6 &lt; x &lt; 7} and {-4.3 &lt; x &lt; 2.4 } }
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- POLYNOMIAL (degree > 2) -->
+  <section class="w3-section">
+    <div class="section-title">
+      <h2>A polynomial of degree higher than 2</h2>
+      <span class="rainbow-pill">Polynomial</span>
+    </div>
+
+    <div class="card two-cols">
+      <div>
+        <div class="responsive-iframe">
+          <iframe src="https://www.desmos.com/calculator/g9o8sftwyk?embed" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <div>
+        <div class="small-h">Transformations Paragraph --0.1(x^4)+2 domain -{-2.89 &lt; x &lt; 2.89 )</div>
+        <p>
+          <strong>Transformation -</strong> The function f(x)=−0.1x<sup>4</sup>+2 is transformed from the function y=x<sup>4</sup>. The graph is reflected over the x-axis due to the negative coefficient. It is then vertically compressed by a factor of 0.1, making the graph wider and flatter. The last transformation is vertically shifted upwards by (value not completed in source).
+        </p>
+
+        <div class="small-h">Domain and Range Paragraph</div>
+        <p>
+          <strong>Domain:</strong> {-2.89 &lt; x &lt; 2.89 } <br/>
+          <strong>Range:</strong> ( 2 &lt; x &lt; -4.6 )  <!-- kept as provided -->
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRIG WITH ASYMPTOTE -->
+  <section class="w3-section">
+    <div class="section-title">
+      <h2>A trigonometric function with an asymptote</h2>
+      <span class="rainbow-pill">Secant-like</span>
+    </div>
+
+    <div class="card two-cols">
+      <div>
+        <div class="responsive-iframe">
+          <iframe src="https://www.desmos.com/calculator/g9o8sftwyk?embed" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <div>
+        <div class="small-h">Transformations Paragraph - -9sec(-0.24x) + 11.5 {-3.66 &lt; x &lt; 3.66 } asymptote: y = 2.51, x = 3.65, x = -2.5</div>
+        <p>
+          <strong>Transformation -</strong> The function -9sec(-0.24x) + 11.5 is a transformation from the parent function y = sec(x). The negative sign in front of the secant reflects the graph across the x-axis. There is a vertical stretch by the factor 9. Next, the graph horizontally stretches by the factor 1/-0.24. The last transformation of the graph is a vertical shift upward by 11.5.
+        </p>
+
+        <div class="small-h">Domain and Range Paragraph</div>
+        <p>
+          <strong>Domain:</strong> {-3.66 &lt; x &lt; 3.66 } <br/>
+          <strong>Range:</strong> {-2.5 &lt; x &lt; 2.5 }
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SINUSOIDAL -->
+  <section class="w3-section">
+    <div class="section-title">
+      <h2>Sinusoidal function</h2>
+      <span class="rainbow-pill">Sine</span>
+    </div>
+
+    <div class="card two-cols">
+      <div>
+        <div class="responsive-iframe">
+          <iframe src="https://www.desmos.com/calculator/qszaxafeq3?embed" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <div>
+        <div class="small-h">Transformations Paragraph - 3sin (x/2.4 ) + 1 {0 &lt; x &lt; 8.7}</div>
+        <p>
+          <strong>Transformation -</strong> The function 3sin (x/2.4 ) + 1 is a transformation from the parent function y = sin(x). There is a vertical stretch by factor 3. Next, the graph horizontally stretches by the factor 2.4. The last transformation of the graph is a vertical shift upward by 1.
+        </p>
+
+        <div class="small-h">Domain and Range Paragraph</div>
+        <p>
+          <strong>Domain:</strong> {0 &lt; x &lt; 8.7} <br/>
+          <strong>Range:</strong> ( -0.38 &lt; x &lt; 1 )
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPONENTIAL -->
+  <section class="w3-section">
+    <div class="section-title">
+      <h2>Exponential function</h2>
+      <span class="rainbow-pill">Exp</span>
+    </div>
+
+    <div class="card two-cols">
+      <div>
+        <div class="responsive-iframe">
+          <iframe src="https://www.desmos.com/calculator/qszaxafeq3?embed" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <div>
+        <div class="small-h">Transformations Paragraph - 0.9(0.45^x) - 6 {-2.6 &lt; x &lt; 0} asymptote x = 1.2 y = -6</div>
+        <p>
+          <strong>Transformation -</strong> The function f(x) = 0.9(0.45^x) - 6 is a transformation from the parent function y = 2^x. There is a vertical stretch by the factor 0.9. The last transformation of the graph is a vertical shift downwards by 6.
+        </p>
+
+        <div class="small-h">Domain and Range Paragraph</div>
+        <p>
+          <strong>Domain:</strong> {-2.6 &lt; x &lt; 0} <br/>
+          <strong>Range:</strong> {-5.07 &lt; x &lt; 1.1 }
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOGARITHMIC -->
+  <section class="w3-section">
+    <div class="section-title">
+      <h2>Logarithmic function</h2>
+      <span class="rainbow-pill">Log</span>
+    </div>
+
+    <div class="card two-cols">
+      <div>
+        <div class="responsive-iframe">
+          <iframe src="https://www.desmos.com/calculator/qszaxafeq3?embed" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <div>
+        <div class="small-h">Transformations Paragraph - 5.2log(x) - 0.5 { 0.1 &lt; x &lt;4 }</div>
+        <p>
+          <strong>Transformation -</strong> The function f(x) = 5.2log(x) - 0.5 is a transformation from the parent function y = log(x). There is a vertical stretch by the factor 5.2. The last transformation of the graph is a vertical shift downwards by 0.5.
+        </p>
+
+        <div class="small-h">Domain and Range Paragraph</div>
+        <p>
+          <strong>Domain:</strong> { 0.1 &lt; x &lt;4 } <br/>
+          <strong>Range:</strong> { 2.6 &lt; x &lt; -4.3 } <!-- as provided -->
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- LINEAR -->
+  <section class="w3-section">
+    <div class="section-title">
+      <h2>Linear function</h2>
+      <span class="rainbow-pill">Linear</span>
+    </div>
+
+    <div class="card two-cols">
+      <div>
+        <div class="responsive-iframe">
+          <iframe src="https://www.desmos.com/calculator/g9o8sftwyk?embed" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <div>
+        <div class="small-h">Transformations Paragraph - y = x + 1</div>
+        <p>
+          <strong>Transformation -</strong> The function f(x)=−x + 1 is transformed from the function y=x. The function has been vertically shifted upwards by 1.
+        </p>
+
+        <div class="small-h">Domain and Range Paragraph</div>
+        <p>
+          <strong>Domain:</strong> { –4.58 &lt; x &lt; 4.66 } <br/>
+          <strong>Range:</strong> { -3.5 &lt; x &lt; 5.65 }
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUADRATIC -->
+  <section class="w3-section">
+    <div class="section-title">
+      <h2>Quadratic function</h2>
+      <span class="rainbow-pill">Quadratic</span>
+    </div>
+
+    <div class="card two-cols">
+      <div>
+        <div class="responsive-iframe">
+          <iframe src="https://www.desmos.com/calculator/g9o8sftwyk?embed" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <div>
+        <div class="small-h">Transformations Paragraph - -0.3x^2 + 1.3 { -3.63 &lt; x &lt; 3.76 }</div>
+        <p>
+          <strong>Transformation -</strong> The function f(x) = 0.3x^2 + 1.3 is a transformation from the parent function y = x^2. There is a vertical stretch by the factor 0.3. The last transformation of the graph is a vertical shift upwards by 1.3.
+        </p>
+
+        <div class="small-h">Domain and Range Paragraph</div>
+        <p>
+          <strong>Domain:</strong> { -3.63 &lt; x &lt; 3.76 } <br/>
+          <strong>Range:</strong> { -2.91 &lt; x &lt; 1.3 }
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    Built with w3.css • Responsive iframes • Colorful cards
+  </footer>
+
+</body>
+</html>
