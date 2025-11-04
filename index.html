@@ -1,149 +1,103 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Functions in the Real World</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- W3.CSS Framework -->
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Graph Transformations Project</title>
   <style>
-    body {font-family: 'Poppins', sans-serif;}
-    .section {
-      padding: 32px;
-      border-radius: 12px;
-      margin-bottom: 40px;
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f2f8ff;
+      color: #222;
+      margin: 0;
+      padding: 0;
     }
-    iframe {
-      width: 100%;
-      max-width: 600px;
-      height: 500px;
-      border: 3px solid white;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+
+    header {
+      background-color: #4f81c7;
+      color: white;
+      text-align: center;
+      padding: 40px 10px;
+      border-bottom: 5px solid #345b8c;
     }
+
+    header h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2em;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 50px auto;
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+    }
+
     h2 {
-      margin-top: 20px;
+      color: #4f81c7;
+      border-left: 6px solid #4f81c7;
+      padding-left: 10px;
     }
-    h3 {
-      color: #fff;
-      text-shadow: 1px 1px 2px #000;
-    }
+
     p {
-      background: rgba(255,255,255,0.9);
+      line-height: 1.6;
+      color: black; /* changed to black */
+    }
+
+    iframe {
+      display: block;
+      margin: 20px auto;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+    }
+
+    footer {
+      background-color: #4f81c7;
+      color: white;
+      text-align: center;
       padding: 15px;
-      border-radius: 8px;
-      color: black; /* changed to black text */
+      font-size: 1em;
     }
   </style>
 </head>
-<body class="w3-light-grey">
-
-  <!-- HEADER -->
-  <header class="w3-center w3-padding-64 w3-xxlarge w3-text-white" style="background: linear-gradient(90deg, #ff66b2, #6a5acd, #00bcd4);">
-    <h1><b>Functions in the Real World</b></h1>
+<body>
+  <header>
+    <h1>Graph Transformations Project</h1>
+    <p>By Kaira, Morgan, and Abigail</p>
   </header>
 
-  <div class="w3-content" style="max-width:1000px">
+  <section>
+    <h2>1. Reciprocal Function</h2>
+    <p>This graph demonstrates how vertical and horizontal transformations affect a reciprocal function. Replace the link below with your own Desmos graph link once it's ready.</p>
+    <iframe src="https://www.desmos.com/calculator" width="500" height="500" frameborder="0"></iframe>
+  </section>
 
-    <!-- RECIPROCAL FUNCTION -->
-    <div class="section w3-pink w3-text-white">
-      <h2>Reciprocal Function: 1/x²</h2>
-      <iframe src="https://www.desmos.com/calculator/5jpqyjhci6?embed" frameborder="0"></iframe>
-      <h3>Reciprocal Function</h3>
-      <p>The function (1.4 / x + 0.69) - 4.85 for −0.54 < x < 5.05 has an asymptote at x = 4.<br>
-      Transformation - The function 1/x has been transformed into (1.4 / x + 0.69) - 4.85. 
-      It’s vertically stretched by a factor of 1.4, shifted left by 0.69 units, and moved down by 4.85.</p>
-      <h3>Domain and Range</h3>
-      <p>Domain: { −0.54 < x < 5.05 } <br> Range: { −4.61 < y < 4 }</p>
-    </div>
+  <section>
+    <h2>2. Quadratic Function</h2>
+    <p>This shows how the vertex form of a parabola changes shape and position based on transformations.</p>
+    <iframe src="https://www.desmos.com/calculator" width="500" height="500" frameborder="0"></iframe>
+  </section>
 
-    <!-- RECIPROCAL SQUARE -->
-    <div class="section w3-purple w3-text-white">
-      <h2>Reciprocal Square Function</h2>
-      <iframe src="https://www.desmos.com/calculator/lwbpm2os8q?embed" frameborder="0"></iframe>
-      <h3>Transformations</h3>
-      <p>The function (34.7/x² + 2) - 5 is transformed from 1/x². 
-      It’s vertically stretched by 34.7, compressed vertically by +2 in the denominator, and shifted down by 5.</p>
-      <h3>Domain and Range</h3>
-      <p>Domain: { −1.916 ≥ x ≥ −7.4 }, { 1.6 < x < 7 } <br> Range: { −4.16 < y < 1.93 }, { −4.3 < y < 2.4 }</p>
-    </div>
+  <section>
+    <h2>3. Cubic Function</h2>
+    <p>The cubic function displays reflections and stretches more clearly because of its inflection point.</p>
+    <iframe src="https://www.desmos.com/calculator" width="500" height="500" frameborder="0"></iframe>
+  </section>
 
-    <!-- POLYNOMIAL -->
-    <div class="section w3-indigo w3-text-white">
-      <h2>Polynomial Function (Degree > 2)</h2>
-      <iframe src="https://www.desmos.com/calculator/ticcsdedpo?embed" frameborder="0"></iframe>
-      <h3>Transformations</h3>
-      <p>The function −0.1x⁴ + 2 is reflected over the x-axis, vertically compressed by 0.1, and shifted up by 2.</p>
-      <h3>Domain and Range</h3>
-      <p>Domain: { −2.89 < x < 2.89 } <br> Range: { −4.6 < y < 2 }</p>
-    </div>
+  <section>
+    <h2>4. Square Root Function</h2>
+    <p>This graph shows how transformations shift the domain and range of a square root function.</p>
+    <iframe src="https://www.desmos.com/calculator" width="500" height="500" frameborder="0"></iframe>
+  </section>
 
-    <!-- TRIGONOMETRIC FUNCTION -->
-    <div class="section w3-deep-orange w3-text-white">
-      <h2>Trigonometric Function with an Asymptote</h2>
-      <iframe src="https://www.desmos.com/calculator/7y2wybbfwv?embed" frameborder="0"></iframe>
-      <h3>Transformations</h3>
-      <p>The function −9sec(−0.24x) + 11.5 reflects across the x-axis, stretches vertically by 9, 
-      horizontally by 1/−0.24, and shifts upward by 11.5.</p>
-      <h3>Domain and Range</h3>
-      <p>Domain: { −3.66 < x < 3.66 } <br> Range: { −2.5 < y < 2.5 }</p>
-    </div>
-
-    <!-- SINUSOIDAL FUNCTION -->
-    <div class="section w3-teal w3-text-white">
-      <h2>Sinusoidal Function</h2>
-      <iframe src="https://www.desmos.com/calculator/dixhgvnjtv?embed" frameborder="0"></iframe>
-      <h3>Transformations</h3>
-      <p>The function 3sin(x/2.4) + 1 stretches vertically by 3, horizontally by 2.4, and shifts upward by 1.</p>
-      <h3>Domain and Range</h3>
-      <p>Domain: { 0 < x < 8.7 } <br> Range: { −0.38 < y < 1 }</p>
-    </div>
-
-    <!-- EXPONENTIAL FUNCTION -->
-    <div class="section w3-blue w3-text-white">
-      <h2>Exponential Function</h2>
-      <iframe src="https://www.desmos.com/calculator/qszaxafeq3?embed" frameborder="0"></iframe>
-      <h3>Transformations</h3>
-      <p>The function 0.9(0.45^x) − 6 is a vertical stretch by 0.9 and a downward shift by 6.</p>
-      <h3>Domain and Range</h3>
-      <p>Domain: { −2.6 < x < 0 } <br> Range: { −5.07 < y < 1.1 }</p>
-    </div>
-
-    <!-- LOGARITHMIC FUNCTION -->
-    <div class="section w3-amber w3-text-white">
-      <h2>Logarithmic Function</h2>
-      <iframe src="https://www.desmos.com/calculator/mbegntzsoz?embed" frameborder="0"></iframe>
-      <h3>Transformations</h3>
-      <p>The function 5.2log(x) − 0.5 stretches vertically by 5.2 and shifts downward by 0.5.</p>
-      <h3>Domain and Range</h3>
-      <p>Domain: { 0.1 < x < 4 } <br> Range: { −4.3 < y < 2.6 }</p>
-    </div>
-
-    <!-- LINEAR FUNCTION -->
-    <div class="section w3-lime w3-text-black">
-      <h2>Linear Function</h2>
-      <iframe src="https://www.desmos.com/calculator/v3ijtbh6ni?embed" frameborder="0"></iframe>
-      <h3>Transformations</h3>
-      <p>The function f(x) = −x + 1 is reflected across the x-axis and shifted up by 1.</p>
-      <h3>Domain and Range</h3>
-      <p>Domain: { −4.58 < x < 4.66 } <br> Range: { −3.5 < y < 5.65 }</p>
-    </div>
-
-    <!-- QUADRATIC FUNCTION -->
-    <div class="section w3-red w3-text-white">
-      <h2>Quadratic Function</h2>
-      <iframe src="https://www.desmos.com/calculator/jhn8fihopr?embed" frameborder="0"></iframe>
-      <h3>Transformations</h3>
-      <p>The function −0.3x² + 1.3 is vertically stretched by 0.3 and shifted upward by 1.3.</p>
-      <h3>Domain and Range</h3>
-      <p>Domain: { −3.63 < x < 3.76 } <br> Range: { −2.91 < y < 1.3 }</p>
-    </div>
-
-  </div>
-
-  <footer class="w3-center w3-padding-32 w3-text-white" style="background: linear-gradient(90deg, #00bcd4, #6a5acd, #ff66b2);">
-    <p><b>Created by Kaira, Morgan and Abigail • Using Desmos & W3.CSS</b></p>
+  <footer>
+    &copy; 2025 Graph Transformations Project — By Kaira, Morgan, and Abigail
   </footer>
-
 </body>
 </html>
