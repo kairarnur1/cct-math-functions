@@ -1,198 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Functions in the Real World</title>
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    body {font-family: 'Poppins', sans-serif;}
-    h1, h2 {font-weight: 600;}
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #fceaff, #e1f5fe);
+      color: #111;
+    }
+    .header {
+      background: linear-gradient(135deg, #a18cd1, #fbc2eb);
+      padding: 60px 20px;
+      color: white;
+      text-align: center;
+    }
+    .header h1 {
+      font-size: 3em;
+      margin: 0;
+    }
+    .section {
+      margin: 50px auto;
+      max-width: 1000px;
+      border-radius: 20px;
+      background: white;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      padding: 30px;
+    }
+    h2 {
+      color: white;
+      padding: 10px;
+      border-radius: 10px;
+      text-align: center;
+      margin-bottom: 25px;
+    }
+    h3 {
+      color: #444;
+      border-left: 5px solid #f39c12;
+      padding-left: 10px;
+    }
+    p {
+      color: #000;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
     iframe {
       width: 100%;
       height: 500px;
-      border: 3px solid #fff;
-      border-radius: 12px;
-    }
-    .section {
-      margin-bottom: 50px;
-      border-radius: 20px;
-      padding: 20px;
-      color: white;
-    }
-    .w3-paragraph {
-      background: rgba(255,255,255,0.9);
-      color: black;
+      border: 3px solid #ccc;
       border-radius: 10px;
+    }
+    footer {
+      background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+      color: white;
+      text-align: center;
       padding: 15px;
-      margin-top: 10px;
+      margin-top: 50px;
     }
-    .subhead {
-      font-size: 1.5em;
-      font-weight: bold;
-      margin-top: 10px;
-      text-decoration: underline;
-    }
+    /* Color accents for each section */
+    .reciprocal { background: linear-gradient(135deg, #a1c4fd, #c2e9fb); }
+    .reciprocal2 { background: linear-gradient(135deg, #fbc2eb, #a6c1ee); }
+    .polynomial { background: linear-gradient(135deg, #ffecd2, #fcb69f); }
+    .trig { background: linear-gradient(135deg, #84fab0, #8fd3f4); }
+    .sinusoidal { background: linear-gradient(135deg, #f6d365, #fda085); }
+    .exponential { background: linear-gradient(135deg, #cfd9df, #e2ebf0); }
+    .logarithmic { background: linear-gradient(135deg, #a8edea, #fed6e3); }
+    .linear { background: linear-gradient(135deg, #89f7fe, #66a6ff); }
+    .quadratic { background: linear-gradient(135deg, #ff9a9e, #fecfef); }
   </style>
 </head>
+<body>
 
-<body class="w3-light-grey">
-
-  <!-- Header -->
-  <header class="w3-center w3-padding-64 w3-xxlarge w3-text-white" style="background: linear-gradient(90deg, #ff5f6d, #ffc371);">
-    <h1><b>Functions in the Real World</b></h1>
+  <header class="header">
+    <h1>Functions in the Real World</h1>
+    <p>Exploring transformations through roller coaster shapes 🎢</p>
   </header>
 
-  <div class="w3-content" style="max-width:1200px;">
+  <!-- Reciprocal Function -->
+  <section class="section reciprocal">
+    <h2>Reciprocal Function: 1/x²</h2>
+    <iframe src="https://www.desmos.com/calculator/5jpqyjhci6?embed" frameborder="0"></iframe>
+    <h3>Reciprocal Function Equation</h3>
+    <p><b>1.4 / (x + 0.69) - 4.85</b> { -0.54 < x < 5.05 }, asymptote x = 4</p>
+    <p><b>Transformation:</b> The function 1/x has been transformed into (1.4 / (x + 0.69)) - 4.85. The vertical stretch by 1.4 makes the graph steeper, while shifting left by 0.69 and downward by 4.85 fits the roller coaster’s curve.</p>
+    <h3>Domain and Range</h3>
+    <p>Domain: { -0.54 < x < 5.05 }, Range: { −4.61 < y < 4 }</p>
+  </section>
 
-    <!-- Reciprocal Function -->
-    <div class="section" style="background: linear-gradient(120deg, #42a5f5, #478ed1);">
-      <h2>Reciprocal Function: 1/x²</h2>
-      <iframe src="https://www.desmos.com/calculator/g9o8sftwyk?embed"></iframe>
+  <!-- Reciprocal Square Function -->
+  <section class="section reciprocal2">
+    <h2>Reciprocal Square Function</h2>
+    <iframe src="https://www.desmos.com/calculator/lwbpm2os8q?embed" frameborder="0"></iframe>
+    <h3>Transformations Paragraph</h3>
+    <p>The function 1/x² has been transformed into 1.0(34.7/x² + 2) - 5. The vertical stretch by 34.7 increases steepness, while adding 2 causes compression and shifting down by 5 moves it lower on the plane.</p>
+    <h3>Domain and Range</h3>
+    <p>Domain: {-1.916 ≥ x ≥ -7.4}, Range: {-4.16 < y < 1.93}, and Domain: {1.6 < x < 7}, Range: {-5 < y < 12.35}</p>
+  </section>
 
-      <div class="w3-paragraph">
-        <div class="subhead">1. Reciprocal Function - (1.4 / (x + 0.69)) - 4.85</div>
-        <p>The graph’s first transformation is a vertical stretch by the factor of 1.4 in the numerator stretching the graph vertically, making it steeper than the parent function 1/x. The second transformation is a shift to the left by 0.69 units caused by (x + 0.69) in the denominator. The last transformation is a vertical shift downwards by 4.85, moving the entire function lower on the coordinate plane.</p>
-      </div>
+  <!-- Polynomial -->
+  <section class="section polynomial">
+    <h2>Polynomial of Degree Higher than 2</h2>
+    <iframe src="https://www.desmos.com/calculator/ticcsdedpo?embed" frameborder="0"></iframe>
+    <h3>Transformations Paragraph</h3>
+    <p>-0.1(x⁴) + 2 { -2.89 < x < 2.89 }. The function f(x)=x⁴ was transformed by reflection (negative sign), vertical compression by 0.1, and shifted up by 2 to match the roller coaster’s shape.</p>
+    <h3>Domain and Range</h3>
+    <p>Domain: { -2.89 < x < 2.89 }, Range: ( -4.6 < y < 2 )</p>
+  </section>
 
-      <div class="w3-paragraph">
-        <div class="subhead">2. Domain and Range</div>
-        <p>Domain: { -0.54 < x < 5.05 }<br>Range: { −4.61 < x < 4 }</p>
-      </div>
-    </div>
+  <!-- Trigonometric Function with Asymptote -->
+  <section class="section trig">
+    <h2>Trigonometric Function with an Asymptote</h2>
+    <iframe src="https://www.desmos.com/calculator/7y2wybbfwv?embed" frameborder="0"></iframe>
+    <h3>Transformations Paragraph</h3>
+    <p>-9sec(-0.24x) + 11.5 { -3.66 < x < 3.66 }, asymptote y = 2.51, x = 3.65, x = -2.5. The graph is vertically stretched by 9, reflected on the x-axis, horizontally stretched by 0.24, and shifted up by 11.5 to fit the roller coaster track.</p>
+    <h3>Domain and Range</h3>
+    <p>Domain: { -3.66 < x < 3.66 }, Range: { -2.5 < y < 2.5 }</p>
+  </section>
 
-    <!-- Reciprocal Square Function -->
-    <div class="section" style="background: linear-gradient(120deg, #66bb6a, #43a047);">
-      <h2>Reciprocal Square Function</h2>
-      <iframe src="https://www.desmos.com/calculator/g9o8sftwyk?embed"></iframe>
+  <!-- Sinusoidal Function -->
+  <section class="section sinusoidal">
+    <h2>Sinusoidal Function</h2>
+    <iframe src="https://www.desmos.com/calculator/dixhgvnjtv?embed" frameborder="0"></iframe>
+    <h3>Transformations Paragraph</h3>
+    <p>3sin(x/2.4) + 1 { 0 < x < 8.7 }. The function was stretched vertically by 3, stretched horizontally by 2.4, and shifted up by 1 unit to fit the roller coaster’s hills.</p>
+    <h3>Domain and Range</h3>
+    <p>Domain: { 0 < x < 8.7 }, Range: ( -0.38 < y < 1 )</p>
+  </section>
 
-      <div class="w3-paragraph">
-        <div class="subhead">1. Transformations Paragraph</div>
-        <p>The function 1/x² has been transformed into 1.0(34.7/x²+2) - 5. The vertical stretch by 34.7 increases steepness. Adding 2 compresses the graph vertically, and subtracting 5 shifts it downward.</p>
-      </div>
+  <!-- Exponential Function -->
+  <section class="section exponential">
+    <h2>Exponential Function</h2>
+    <iframe src="https://www.desmos.com/calculator/qszaxafeq3?embed" frameborder="0"></iframe>
+    <h3>Transformations Paragraph</h3>
+    <p>0.9(0.45^x) - 6 { -2.6 < x < 0 }, asymptote x = 1.2, y = -6. The base 0.45 causes exponential decay, vertically compressed by 0.9, and shifted down 6 units to match the roller coaster’s dip.</p>
+    <h3>Domain and Range</h3>
+    <p>Domain: { -2.6 < x < 0 }, Range: { -5.07 < y < 1.1 }</p>
+  </section>
 
-      <div class="w3-paragraph">
-        <div class="subhead">2. Domain and Range</div>
-        <p>Domain: {-1.916 ≥ x ≥ -7.4}, {1.6 < x < 7}<br>Range: {-4.16 < x < 1.93}, {-4.3 < x < 2.4}</p>
-      </div>
-    </div>
+  <!-- Logarithmic Function -->
+  <section class="section logarithmic">
+    <h2>Logarithmic Function</h2>
+    <iframe src="https://www.desmos.com/calculator/mbegntzsoz?embed" frameborder="0"></iframe>
+    <h3>Transformations Paragraph</h3>
+    <p>5.2log(x) - 0.5. The graph was vertically stretched by 5.2 to increase steepness and shifted down 0.5 to match the roller coaster’s rise.</p>
+    <h3>Domain and Range</h3>
+    <p>Domain: { 0.1 < x < 4 }, Range: { -4.3 < y < 2.6 }</p>
+  </section>
 
-    <!-- Polynomial -->
-    <div class="section" style="background: linear-gradient(120deg, #ff7043, #ff8a65);">
-      <h2>Polynomial of Degree Higher Than 2</h2>
-      <iframe src="https://www.desmos.com/calculator/g9o8sftwyk?embed"></iframe>
+  <!-- Linear Function -->
+  <section class="section linear">
+    <h2>Linear Function</h2>
+    <iframe src="https://www.desmos.com/calculator/v3ijtbh6ni?embed" frameborder="0"></iframe>
+    <h3>Transformations Paragraph</h3>
+    <p>y = x + 1. The parent function y=x was shifted up by 1 to align with the roller coaster’s straight section.</p>
+    <h3>Domain and Range</h3>
+    <p>Domain: { -4.58 < x < 4.66 }, Range: { -3.5 < y < 5.65 }</p>
+  </section>
 
-      <div class="w3-paragraph">
-        <div class="subhead">1. Transformations Paragraph</div>
-        <p>I transformed f(x)=x⁴ to f(x)=-0.1(x⁴)+2. The negative sign reflects it vertically; 0.1 compresses it, making it wider; +2 shifts it upward to align with the roller coaster peak.</p>
-      </div>
+  <!-- Quadratic Function -->
+  <section class="section quadratic">
+    <h2>Quadratic Function</h2>
+    <iframe src="https://www.desmos.com/calculator/jhn8fihopr?embed" frameborder="0"></iframe>
+    <h3>Transformations Paragraph</h3>
+    <p>-0.3x² + 1.3 { -3.63 < x < 3.76 }. The function was vertically compressed by 0.3, making it wider, and shifted up by 1.3, lifting the vertex above the x-axis.</p>
+    <h3>Domain and Range</h3>
+    <p>Domain: { -3.63 < x < 3.76 }, Range: { -2.91 < y < 1.3 }</p>
+  </section>
 
-      <div class="w3-paragraph">
-        <div class="subhead">2. Domain and Range</div>
-        <p>Domain: {-2.89 < x < 2.89}<br>Range: {2 < x < -4.6}</p>
-      </div>
-    </div>
-
-    <!-- Trigonometric -->
-    <div class="section" style="background: linear-gradient(120deg, #ab47bc, #8e24aa);">
-      <h2>Trigonometric Function with an Asymptote</h2>
-      <iframe src="https://www.desmos.com/calculator/g9o8sftwyk?embed"></iframe>
-
-      <div class="w3-paragraph">
-        <div class="subhead">1. Transformations Paragraph</div>
-        <p>The function sec(x) transformed into -9sec(-0.24x)+11.5. Vertical stretch (×9), reflection on x-axis, horizontal stretch by -0.24, and vertical shift up by 11.5 create the correct roller coaster curve.</p>
-      </div>
-
-      <div class="w3-paragraph">
-        <div class="subhead">2. Domain and Range</div>
-        <p>Domain: {-3.66 < x < 3.66}<br>Range: {-2.5 < x < 2.5}</p>
-      </div>
-    </div>
-
-    <!-- Sinusoidal -->
-    <div class="section" style="background: linear-gradient(120deg, #26c6da, #0097a7);">
-      <h2>Sinusoidal Function</h2>
-      <iframe src="https://www.desmos.com/calculator/qszaxafeq3?embed"></iframe>
-
-      <div class="w3-paragraph">
-        <div class="subhead">1. Transformations Paragraph</div>
-        <p>The function y=sin(x) transformed into 3sin(x/2.4)+1. The vertical stretch by 3 increases peaks, division by 2.4 stretches horizontally, and +1 shifts it upward.</p>
-      </div>
-
-      <div class="w3-paragraph">
-        <div class="subhead">2. Domain and Range</div>
-        <p>Domain: {0 < x < 8.7}<br>Range: (-0.38 < x < 1)</p>
-      </div>
-    </div>
-
-    <!-- Exponential -->
-    <div class="section" style="background: linear-gradient(120deg, #ffca28, #fbc02d);">
-      <h2>Exponential Function</h2>
-      <iframe src="https://www.desmos.com/calculator/qszaxafeq3?embed"></iframe>
-
-      <div class="w3-paragraph">
-        <div class="subhead">1. Transformations Paragraph</div>
-        <p>The parent function y=a^x transformed into 0.9(0.45^x)-6. The base 0.45 creates decay, 0.9 compresses vertically, and -6 shifts it downward to fit the roller coaster track.</p>
-      </div>
-
-      <div class="w3-paragraph">
-        <div class="subhead">2. Domain and Range</div>
-        <p>Domain: {-2.6 < x < 0}<br>Range: {-5.07 < x < 1.1}</p>
-      </div>
-    </div>
-
-    <!-- Logarithmic -->
-    <div class="section" style="background: linear-gradient(120deg, #ef5350, #e53935);">
-      <h2>Logarithmic Function</h2>
-      <iframe src="https://www.desmos.com/calculator/qszaxafeq3?embed"></iframe>
-
-      <div class="w3-paragraph">
-        <div class="subhead">1. Transformations Paragraph</div>
-        <p>The function y=log(x) transformed into 5.2log(x)-0.5. The vertical stretch of 5.2 increases steepness, and -0.5 shifts it down to fit the track height.</p>
-      </div>
-
-      <div class="w3-paragraph">
-        <div class="subhead">2. Domain and Range</div>
-        <p>Domain: {0.1 < x < 4}<br>Range: {2.6 < x < -4.3}</p>
-      </div>
-    </div>
-
-    <!-- Linear -->
-    <div class="section" style="background: linear-gradient(120deg, #8d6e63, #6d4c41);">
-      <h2>Linear Function</h2>
-      <iframe src="https://www.desmos.com/calculator/g9o8sftwyk?embed"></iframe>
-
-      <div class="w3-paragraph">
-        <div class="subhead">1. Transformations Paragraph</div>
-        <p>The parent function y=x transformed to y=x+1. This shifts the entire line upward by 1 unit, aligning it with the roller coaster track.</p>
-      </div>
-
-      <div class="w3-paragraph">
-        <div class="subhead">2. Domain and Range</div>
-        <p>Domain: {–4.58 < x < 4.66}<br>Range: {–3.5 < x < 5.65}</p>
-      </div>
-    </div>
-
-    <!-- Quadratic -->
-    <div class="section" style="background: linear-gradient(120deg, #7e57c2, #5e35b1);">
-      <h2>Quadratic Function</h2>
-      <iframe src="https://www.desmos.com/calculator/g9o8sftwyk?embed"></iframe>
-
-      <div class="w3-paragraph">
-        <div class="subhead">1. Transformations Paragraph</div>
-        <p>The function f(x) = -0.3x² + 1.3 is a vertical stretch and upward shift of the parent y=x². The vertex rises to (0,1.3) and the parabola widens to fit the roller coaster curve.</p>
-      </div>
-
-      <div class="w3-paragraph">
-        <div class="subhead">2. Domain and Range</div>
-        <p>Domain: {-3.63 < x < 3.76}<br>Range: {-2.91 < x < 1.3}</p>
-      </div>
-    </div>
-  </div>
-
-  <footer class="w3-center w3-padding-32 w3-large" style="background:#333; color:white;">
-    © 2025 Functions in the Real World — Created by Kaira, Morgan, and Abigail
+  <footer>
+    <p>&copy; 2025 Functions in the Real World — by Kaira, Morgan, and Abigail</p>
   </footer>
 
 </body>
